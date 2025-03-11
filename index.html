@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Basketball Scoreboard</title>
+  </head>
+  <body>
+    <section class="wrapper">
+      <section class="scoreboard-container">
+        <section class="header">
+          <h1 class="header-container">Basketball Scoreboard</h1>
+        </section>
+
+        <section class="timer-section">
+          <div class="timer-container">
+            <div class="timer"><h2>12:00</h2></div>
+            <button class="timer-start">Start</button>
+            <button class="timer-stop">Stop</button>
+            <button class="timer-reset">Reset</button>
+          </div>
+        </section>
+
+        <section class="period-section">
+          <div class="period-container">
+            <span class="period-heading">Period</span>
+            <div class="period-value">
+              <h2>0</h2>
+            </div>
+            <div class="period-buttons">
+              <button class="period-increment">+</button>
+              <button class="period-decrement">-</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="teams-section">
+          <div class="team-container">
+            <div class="home-section">
+              <div class="home-heading"><h2>HOME</h2></div>
+              <div class="home-score">
+                <span>0</span>
+              </div>
+              <div class="home-points">
+                <button class="point-one">+1</button>
+                <button class="point-two">+2</button>
+                <button class="point-three">+3</button>
+                <button class="point-neg-one">-1</button>
+              </div>
+            </div>
+
+            <div class="fouls-section">
+              <h2 class="fouls-heading">Fouls</h2>
+              <div class="score-container">
+                <span class="foul-score">0</span>
+              </div>
+              <div class="fouls-adjuster">
+                <button class="foul-increment">+</button>
+                <button class="foul-decrement">-</button>
+              </div>
+            </div>
+
+            <div class="guest-section">
+              <div class="guest-heading"><h2>GUEST</h2></div>
+              <div class="guest-score">
+                <span>0</span>
+              </div>
+              <div class="guest-points">
+                <button class="point-one">+1</button>
+                <button class="point-two">+2</button>
+                <button class="point-three">+3</button>
+                <button class="point-neg-one">-1</button>
+              </div>
+            </div>
+
+            <div class="fouls-section">
+              <h2 class="fouls-heading">Fouls</h2>
+              <div class="score-container">
+                <span class="foul-score">0</span>
+              </div>
+              <div class="fouls-adjuster">
+                <button class="foul-increment">+</button>
+                <button class="foul-decrement">-</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="new-game">
+          <button class="reset-game">New Game</button>
+        </section>
+      </section>
+    </section>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
