@@ -30,7 +30,7 @@ This project is a web-based basketball scoreboard with enhanced functionalities 
 1.  **Clone the repository:**
 
     ```bash
-    git clone [repository URL]
+    git clone https://github.com/Timmydrax/basketball-scoreboard
     ```
 
 2.  **Open `index.html` in your web browser:**
