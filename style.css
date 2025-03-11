@@ -76,6 +76,19 @@ h6 {
   --beige: #f1faee;
   --steel-blue: #457b9d;
   --navy-blue: #1d3557;
+  --white: #fff;
+  --spacing-4px: 0.25rem;
+  --spacing-8px: 0.5rem;
+  --spacing-12px: 0.75rem;
+  --spacing-16px: 1rem;
+  --spacing-20px: 1.25rem;
+  --spacing-24px: 1.5rem;
+  --spacing-28px: 1.75rem;
+  --spacing-32px: 2rem;
+  --spacing-36px: 2.25rem;
+  --spacing-40px: 2.5rem;
+  --spacing-44px: 2.75rem;
+  --spacing-48px: 3rem;
 }
 
 .wrapper {
@@ -88,6 +101,9 @@ h6 {
 }
 
 .scoreboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: var(--steel-blue);
   max-width: 954px;
   border-radius: 1rem;
@@ -95,4 +111,102 @@ h6 {
   margin: 3rem auto;
   padding-inline: 4rem;
   padding-block: 2rem;
+}
+
+.header-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block-end: 1.5rem;
+
+  > h1 {
+    font-size: 3rem;
+    color: var(--white);
+  }
+}
+
+.timer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-block-end: 1.25rem;
+}
+
+.timer {
+  margin-block-end: 1rem;
+}
+
+.timer-heading {
+  display: inline;
+  font-size: 2rem;
+  padding-inline: 0.75rem;
+  padding-block: 0.25rem;
+  color: var(--steel-blue);
+  background-color: var(--beige);
+  border-radius: 0.25rem;
+}
+
+.timer-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+
+  > button {
+    background-color: var(--navy-blue);
+    color: var(--white);
+    border: none;
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+    border-radius: 0.25rem;
+  }
+}
+
+.period-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block-end: 1.5rem;
+}
+
+.period-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.period-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--white);
+  margin-block-end: 0.5rem;
+}
+
+.period-value {
+  font-size: 2rem;
+  color: var(--steel-blue);
+  background-color: var(--beige);
+  padding-inline: 0.75rem;
+  padding-block: 0.25rem;
+  border-radius: 0.25rem;
+  margin-block-end: var(--spacing-8px);
+}
+
+.period-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--spacing-8px);
+
+  > button {
+    border: none;
+    padding-inline: var(--spacing-12px);
+    padding-block: var(--spacing-4px);
+    color: var(--white);
+    background-color: var(--navy-blue);
+    border-radius: 4px;
+  }
 }

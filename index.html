@@ -15,26 +15,26 @@
   <body>
     <section class="wrapper">
       <section class="scoreboard-container">
-        <section class="header">
-          <h1 class="header-container">Basketball Scoreboard</h1>
+        <section class="header-section">
+          <h1 class="header">Basketball Scoreboard</h1>
         </section>
 
         <section class="timer-section">
           <div class="timer-container">
-            <div class="timer"><h2>12:00</h2></div>
-            <button class="timer-start">Start</button>
-            <button class="timer-stop">Stop</button>
-            <button class="timer-reset">Reset</button>
+            <div class="timer"><h2 class="timer-heading">12:00</h2></div>
+            <div class="timer-btn">
+              <button class="timer-start">Start</button>
+              <button class="timer-stop">Stop</button>
+              <button class="timer-reset">Reset</button>
+            </div>
           </div>
         </section>
 
         <section class="period-section">
           <div class="period-container">
             <span class="period-heading">Period</span>
-            <div class="period-value">
-              <h2>0</h2>
-            </div>
-            <div class="period-buttons">
+            <h2 class="period-value">0</h2>
+            <div class="period-btn">
               <button class="period-increment">+</button>
               <button class="period-decrement">-</button>
             </div>
@@ -93,7 +93,7 @@
           </div>
         </section>
 
-        <section class="new-game">
+        <section class="reset-section">
           <button class="reset-game">New Game</button>
         </section>
       </section>
