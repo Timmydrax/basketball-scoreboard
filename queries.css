@@ -17,6 +17,7 @@
 
   .scoreboard-container {
     padding-inline: 1rem;
+    margin: 1rem auto;
   }
 
   .header-section {
@@ -52,6 +53,10 @@
 @media (max-width: 320px) {
   .wrapper {
     padding-inline: var(--spacing-16px);
+  }
+
+  .scoreboard-container {
+    margin: 1rem auto;
   }
 
   .home-section,
