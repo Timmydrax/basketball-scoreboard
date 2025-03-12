@@ -11,6 +11,10 @@
 }
 
 @media (max-width: 480px) {
+  .wrapper {
+    padding-inline: var(--spacing-16px);
+  }
+
   .scoreboard-container {
     padding-inline: 1rem;
   }

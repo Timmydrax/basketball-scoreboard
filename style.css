@@ -118,7 +118,8 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-block-end: 1.5rem;
+  -webkit-margin-after: 1.5rem;
+          margin-block-end: 1.5rem;
 
   > h1 {
     font-size: 3rem;
@@ -132,11 +133,13 @@ h6 {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-block-end: 1.25rem;
+  -webkit-margin-after: 1.25rem;
+          margin-block-end: 1.25rem;
 }
 
 .timer {
-  margin-block-end: 1rem;
+  -webkit-margin-after: 1rem;
+          margin-block-end: 1rem;
 }
 
 .timer-heading {
@@ -170,7 +173,8 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-block-end: 1.5rem;
+  -webkit-margin-after: 1.5rem;
+          margin-block-end: 1.5rem;
 }
 
 .period-container {
@@ -185,7 +189,8 @@ h6 {
   font-size: 1.5rem;
   font-weight: bold;
   color: var(--white);
-  margin-block-end: 0.5rem;
+  -webkit-margin-after: 0.5rem;
+          margin-block-end: 0.5rem;
 }
 
 .period-value {
@@ -195,7 +200,8 @@ h6 {
   padding-inline: 0.75rem;
   padding-block: 0.25rem;
   border-radius: 0.25rem;
-  margin-block-end: var(--spacing-8px);
+  -webkit-margin-after: var(--spacing-8px);
+          margin-block-end: var(--spacing-8px);
 }
 
 .period-btn {
@@ -219,7 +225,8 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-block-end: var(--spacing-24px);
+  -webkit-margin-after: var(--spacing-24px);
+          margin-block-end: var(--spacing-24px);
 }
 
 .teams-container {
@@ -255,7 +262,8 @@ h6 {
   font-size: 24px;
   color: #fff;
   font-weight: bold;
-  margin-block-end: var(--spacing-8px);
+  -webkit-margin-after: var(--spacing-8px);
+          margin-block-end: var(--spacing-8px);
 }
 
 .home-score,
@@ -266,7 +274,8 @@ h6 {
   padding-inline: 3rem;
   padding-block: 1rem;
   border-radius: var(--spacing-4px);
-  margin-block-end: var(--spacing-8px);
+  -webkit-margin-after: var(--spacing-8px);
+          margin-block-end: var(--spacing-8px);
 }
 
 .home-points,
@@ -275,7 +284,8 @@ h6 {
   flex-direction: row;
   align-items: center;
   gap: var(--spacing-8px);
-  margin-block-end: var(--spacing-8px);
+  -webkit-margin-after: var(--spacing-8px);
+          margin-block-end: var(--spacing-8px);
 
   > button {
     border: none;
