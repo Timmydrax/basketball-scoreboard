@@ -98,6 +98,7 @@ h6 {
   background-color: var(--beige);
   max-width: 1280px;
   width: 100%;
+  padding-inline: var(--spacing-32px);
 }
 
 .scoreboard-container {
@@ -230,10 +231,9 @@ h6 {
 
 .home-section,
 .guest-section {
-  /* max-width: 400px; */
+  max-width: 400px;
   display: flex;
   flex-direction: column;
-  width: 400px;
   width: 100%;
   min-height: 420px;
   background-color: #f1faee66;
@@ -247,6 +247,7 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
 }
 
 .home-heading,

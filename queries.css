@@ -1,3 +1,58 @@
 @media (max-width: 1024px) {
-    
+  .scoreboard-container {
+    padding-inline: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .teams-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .scoreboard-container {
+    padding-inline: 1rem;
+  }
+
+  .header-section {
+    text-align: center;
+
+    > h1 {
+      font-size: 2rem;
+      color: var(--white);
+    }
+  }
+
+  .home-section,
+  .guest-section {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 4rem;
+    padding-block: 3rem;
+  }
+
+  .home-container,
+  .guest-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .wrapper {
+    padding-inline: var(--spacing-16px);
+  }
+
+  .home-section,
+  .guest-section {
+    padding-inline: 2rem;
+    padding-block: 2rem;
+  }
 }
