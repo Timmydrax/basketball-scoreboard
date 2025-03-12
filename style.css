@@ -322,3 +322,20 @@ h6 {
     border: none;
   }
 }
+
+/* Reset Section */
+.reset-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  > button {
+    font-size: var(--spacing-24px);
+    color: var(--white);
+    background-color: var(--bright-red);
+    border-radius: var(--spacing-4px);
+    border: none;
+    padding-inline: var(--spacing-16px);
+    padding-block: var(--spacing-4px);
+  }
+}
