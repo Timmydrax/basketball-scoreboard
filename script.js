@@ -97,13 +97,81 @@ function highlightLeadingTeam() {
   }
 }
 
-// Trial
+// Home Increment & Decrement
 function incrementHomeScore(points) {
   gameState.homeScore += points; // Add points to the home score
   updateScores(); // Update the scoreboard display
   highlightLeadingTeam(); // Check which team is leading
 }
 
+function decrementHomeScore(points) {
+  gameState.homeScore = Math.max(0, gameState.homeScore - points); // Subtracts points, When value < 0 , max value = 0
+  updateScores(); // Update the scoreboard display
+  highlightLeadingTeam(); // Check which team is leading
+}
+
+// +3
 homeScoreThree.addEventListener("click", () => {
   incrementHomeScore(3);
+});
+// +2
+homeScoreTwo.addEventListener("click", () => {
+  incrementHomeScore(2);
+});
+// +1
+homeScoreOne.addEventListener("click", () => {
+  incrementHomeScore(1);
+});
+// -1
+homeScoreMinus.addEventListener("click", () => {
+  decrementHomeScore(1);
+});
+
+// Guest Increment & Decrement
+function incrementGuestScore(points) {
+  gameState.guestScore += points; // Add points to the home score
+  updateScores(); // Update the scoreboard display
+  highlightLeadingTeam(); // Check which team is leading
+}
+
+function decrementGuestScore(points) {
+  gameState.guestScore = Math.max(0, gameState.guestScore - points); // Subtracts points, When value < 0 , max value = 0
+  updateScores(); // Update the scoreboard display
+  highlightLeadingTeam(); // Check which team is leading
+}
+
+// +1
+guestScoreOne.addEventListener("click", () => {
+  incrementGuestScore(1);
+});
+// +2
+guestScoreTwo.addEventListener("click", () => {
+  incrementGuestScore(2);
+});
+//+3
+guestScoreThree.addEventListener("click", () => {
+  incrementGuestScore(3);
+});
+//-1
+guestScoreMinus.addEventListener("click", () => {
+  decrementGuestScore(1);
+});
+
+//Period Increment & Decrement
+function periodIncrement() {
+  gameState.period = Math.min(4, gameState.period + 1);
+  updatePeriodElement();
+}
+//Increase Button
+increasePeriod.addEventListener("click", () => {
+  periodIncrement();
+});
+
+function periodDecrement() {
+  gameState.period = Math.max(1, gameState.period - 1);
+  updatePeriodElement();
+}
+//Decrease Button
+decreasePeriod.addEventListener("click", () => {
+  periodDecrement();
 });
