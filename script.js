@@ -157,21 +157,62 @@ guestScoreMinus.addEventListener("click", () => {
   decrementGuestScore(1);
 });
 
-//Period Increment & Decrement
-function periodIncrement() {
-  gameState.period = Math.min(4, gameState.period + 1);
+//Period Increment
+function periodIncrement(points) {
+  gameState.period = Math.min(4, gameState.period + points);
   updatePeriodElement();
 }
-//Increase Button
+
 increasePeriod.addEventListener("click", () => {
-  periodIncrement();
+  periodIncrement(1);
 });
 
-function periodDecrement() {
-  gameState.period = Math.max(1, gameState.period - 1);
+//Period Decrement
+function periodDecrement(points) {
+  gameState.period = Math.max(1, gameState.period - points);
   updatePeriodElement();
 }
-//Decrease Button
+
 decreasePeriod.addEventListener("click", () => {
-  periodDecrement();
+  periodDecrement(1);
+});
+
+// Home Foul Increment & Decreament
+
+function homeFoulsIncrease(points) {
+  gameState.homeFouls += points;
+  updateHomeFouls();
+}
+
+homeFoulsIncrement.addEventListener("click", () => {
+  homeFoulsIncrease(1);
+});
+
+function homeFoulsDecrease(points) {
+  gameState.homeFouls = Math.max(0, gameState.homeFouls - points);
+  updateHomeFouls();
+}
+
+homeFoulsDecrement.addEventListener("click", () => {
+  homeFoulsDecrease(1);
+});
+
+// Guest Foul Increment & Decrement
+
+function guestFoulsIncrease(points) {
+  gameState.guestFouls = gameState.guestFouls + points;
+  updateGuestFouls();
+}
+
+guestFoulsIncrement.addEventListener("click", () => {
+  guestFoulsIncrease(1);
+});
+
+function guestFoulsDecrease(points) {
+  gameState.guestFouls = Math.max(0, gameState.guestFouls - points);
+  updateGuestFouls();
+}
+
+guestFoulsDecrement.addEventListener("click", () => {
+  guestFoulsDecrease(1);
 });
