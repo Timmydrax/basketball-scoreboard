@@ -31,12 +31,12 @@
 
   .home-section,
   .guest-section {
-    max-width: 400px;
+    max-width: 320px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-inline: 4rem;
+    padding-inline: 2rem;
     padding-block: 3rem;
   }
 
@@ -46,7 +46,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
   }
 }
 
@@ -61,7 +60,12 @@
 
   .home-section,
   .guest-section {
-    padding-inline: 2rem;
-    padding-block: 2rem;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 1rem;
+    padding-block: 1rem;
   }
 }

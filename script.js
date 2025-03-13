@@ -18,18 +18,18 @@ let increasePeriod = document.getElementById("increasePeriod");
 let decreasePeriod = document.getElementById("decreasePeriod");
 
 //Home Buttons
-let homeScoreOne = document.getElementsByName("home-score-1");
-let homeScoreTwo = document.getElementsByName("home-score-2");
-let homeScoreThree = document.getElementsByName("home-score-3");
-let homeScoreMinus = document.getElementsByName("home-score-minus");
+let homeScoreOne = document.getElementById("home-score-1");
+let homeScoreTwo = document.getElementById("home-score-2");
+let homeScoreThree = document.getElementById("home-score-3");
+let homeScoreMinus = document.getElementById("home-score-minus");
 let homeFoulsIncrement = document.getElementById("home-fouls-plus");
 let homeFoulsDecrement = document.getElementById("home-fouls-minus");
 
 //Guest Buttons
-let guestScoreOne = document.getElementsByName("guest-score-1");
-let guestScoreTwo = document.getElementsByName("guest-score-2");
-let guestScoreThree = document.getElementsByName("guest-score-3");
-let guestScoreMinus = document.getElementsByName("guest-score-minus");
+let guestScoreOne = document.getElementById("guest-score-1");
+let guestScoreTwo = document.getElementById("guest-score-2");
+let guestScoreThree = document.getElementById("guest-score-3");
+let guestScoreMinus = document.getElementById("guest-score-minus");
 let guestFoulsIncrement = document.getElementById("guest-fouls-plus");
 let guestFoulsDecrement = document.getElementById("guest-fouls-minus");
 
@@ -82,3 +82,28 @@ function initializeGameStateDisplay() {
 }
 
 initializeGameStateDisplay();
+
+//Highlight Leading Team
+function highlightLeadingTeam() {
+  if (gameState.homeScore > gameState.guestScore) {
+    homeTeamElement.classList.add("leading");
+    guestTeamElement.classList.remove("leading");
+  } else if (gameState.guestScore > gameState.homeScore) {
+    guestTeamElement.classList.add("leading");
+    homeTeamElement.classList.remove("leading");
+  } else {
+    homeTeamElement.classList.remove("leading");
+    guestTeamElement.classList.remove("leading");
+  }
+}
+
+// Trial
+function incrementHomeScore(points) {
+  gameState.homeScore += points; // Add points to the home score
+  updateScores(); // Update the scoreboard display
+  highlightLeadingTeam(); // Check which team is leading
+}
+
+homeScoreThree.addEventListener("click", () => {
+  incrementHomeScore(3);
+});

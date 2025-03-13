@@ -238,15 +238,20 @@ h6 {
 
 .home-section,
 .guest-section {
-  max-width: 400px;
+  width: 25rem;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  align-items: center;
+  justify-content: center;
   min-height: 420px;
-  background-color: #f1faee66;
-  padding-inline: 7.75rem;
+  background-color: transparent;
+  padding-inline: 2rem;
   padding-block: 3rem;
   border-radius: var(--spacing-8px);
+}
+
+.leading {
+  background-color: #f1faee66;
 }
 
 .home-container,
@@ -254,7 +259,6 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
 }
 
 .home-heading,
@@ -266,16 +270,30 @@ h6 {
   margin-block-end: var(--spacing-8px);
 }
 
+.home-score-box,
+.guest-score-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--navy-blue);
+  border-radius: var(--spacing-4px);
+  width: 220px;
+  height: 150px;
+  -webkit-margin-after: var(--spacing-8px);
+  margin-block-end: var(--spacing-8px);
+}
+
 .home-score,
 .guest-score {
   font-size: 5rem;
   color: var(--bright-red);
-  background-color: var(--navy-blue);
-  padding-inline: 3rem;
-  padding-block: 1rem;
-  border-radius: var(--spacing-4px);
-  -webkit-margin-after: var(--spacing-8px);
-  margin-block-end: var(--spacing-8px);
+  /* background-color: var(--navy-blue); */
+  /* padding-inline: 3rem; */
+  /* padding-block: 1rem; */
+  /* border-radius: var(--spacing-4px); */
+  /* -webkit-margin-after: var(--spacing-8px); */
+  /* margin-block-end: var(--spacing-8px); */
 }
 
 .home-points,
