@@ -22,11 +22,13 @@
 
         <section class="timer-section">
           <div class="timer-container">
-            <div class="timer"><h2 class="timer-heading">12:00</h2></div>
+            <div class="timer">
+              <h2 class="timer-heading" id="timer">12:00</h2>
+            </div>
             <div class="timer-btn">
-              <button class="timer-start">Start</button>
-              <button class="timer-stop">Stop</button>
-              <button class="timer-reset">Reset</button>
+              <button class="timer-start" id="startTimer">Start</button>
+              <button class="timer-stop" id="stopTimer">Stop</button>
+              <button class="timer-reset" id="resetTimer">Reset</button>
             </div>
           </div>
         </section>
@@ -34,56 +36,64 @@
         <section class="period-section">
           <div class="period-container">
             <span class="period-heading">Period</span>
-            <h2 class="period-value">0</h2>
+            <h2 class="period-value" id="period">0</h2>
             <div class="period-btn">
-              <button class="period-increment">+</button>
-              <button class="period-decrement">-</button>
+              <button class="period-increment" id="increasePeriod">+</button>
+              <button class="period-decrement" id="decreasePeriod">-</button>
             </div>
           </div>
         </section>
 
         <section class="teams-section">
           <div class="teams-container">
-            <div class="home-section">
+            <div class="home-section" id="homeTeam">
               <div class="home-container">
                 <h2 class="home-heading">HOME</h2>
-                <span class="home-score">0</span>
+                <span class="home-score" id="home-score">0</span>
                 <div class="home-points">
-                  <button class="point-one">+1</button>
-                  <button class="point-two">+2</button>
-                  <button class="point-three">+3</button>
-                  <button class="point-neg-one">-1</button>
+                  <button class="point-one" id="home-score-1">+1</button>
+                  <button class="point-two" id="home-score-2">+2</button>
+                  <button class="point-three" id="home-score-3">+3</button>
+                  <button class="point-minus" id="home-score-minus">-1</button>
                 </div>
 
                 <div class="fouls-section">
                   <h2 class="fouls-heading">Fouls</h2>
-                  <span class="fouls-score">0</span>
-                  <div class="fouls-adjuster">
-                    <button class="foul-increment">+</button>
-                    <button class="foul-decrement">-</button>
+                  <span class="fouls-score" id="home-fouls">0</span>
+                  <div class="fouls-controls">
+                    <button class="foul-increment" id="home-fouls-plus">
+                      +
+                    </button>
+                    <button class="foul-decrement" id="home-fouls-minus">
+                      -
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="guest-section">
+            <div class="guest-section" id="guest-team">
               <div class="guest-container">
                 <h2 class="guest-heading">GUEST</h2>
-                <span class="guest-score">0</span>
+                <span class="guest-score" id="guest-score">0</span>
 
                 <div class="guest-points">
-                  <button class="point-one">+1</button>
-                  <button class="point-two">+2</button>
-                  <button class="point-three">+3</button>
-                  <button class="point-neg-one">-1</button>
+                  <button class="point-one" id="guest-score-1">+1</button>
+                  <button class="point-two" id="guest-score-2">+2</button>
+                  <button class="point-three" id="guest-score-3">+3</button>
+                  <button class="point-minus" id="guest-score-minus">-1</button>
                 </div>
 
                 <div class="fouls-section">
                   <h2 class="fouls-heading">Fouls</h2>
-                  <span class="fouls-score">0</span>
-                  <div class="fouls-adjuster">
-                    <button class="foul-increment">+</button>
-                    <button class="foul-decrement">-</button>
+                  <span class="fouls-score" id="guest-fouls">0</span>
+                  <div class="fouls-controls">
+                    <button class="foul-increment" id="guest-fouls-plus">
+                      +
+                    </button>
+                    <button class="foul-decrement" id="guest-fouls-minus">
+                      -
+                    </button>
                   </div>
                 </div>
               </div>
@@ -92,7 +102,7 @@
         </section>
 
         <section class="reset-section">
-          <button class="reset-game">New Game</button>
+          <button class="reset-game" id="new-game">New Game</button>
         </section>
       </section>
     </section>
