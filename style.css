@@ -177,6 +177,7 @@ h6 {
     padding-block: 0.5rem;
     border-radius: 0.25rem;
     transition: background-color 0.3s ease;
+    cursor: pointer;
 
     &:hover {
       background-color: var(--hover-navy-blue);
@@ -208,6 +209,7 @@ h6 {
   -webkit-margin-after: 0.5rem;
   margin-block-end: 0.5rem;
 }
+
 .period-box {
   display: flex;
   flex-direction: column;
@@ -240,6 +242,7 @@ h6 {
     background-color: var(--navy-blue);
     border-radius: 4px;
     transition: background-color 0.3s ease;
+    cursor: pointer;
 
     &:hover {
       background-color: var(--hover-navy-blue);
@@ -335,6 +338,7 @@ h6 {
     background-color: var(--navy-blue);
     border-radius: var(--spacing-4px);
     transition: background-color 0.3s ease;
+    cursor: pointer;
 
     &:hover {
       background-color: var(--hover-navy-blue);
@@ -384,6 +388,7 @@ h6 {
     border-radius: var(--spacing-4px);
     border: none;
     transition: background-color 0.3s ease;
+    cursor: pointer;
 
     &:hover {
       background-color: var(--hover-navy-blue);
@@ -406,6 +411,7 @@ h6 {
     padding-inline: var(--spacing-16px);
     padding-block: var(--spacing-4px);
     transition: background-color 0.3s ease;
+    cursor: pointer;
 
     &:hover {
       background-color: var(--hover-bright-red);
