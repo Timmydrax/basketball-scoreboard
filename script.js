@@ -273,3 +273,24 @@ function updateTimer() {
 
   updateTimerElement();
 }
+
+// Reset Game Function
+function resettingGame() {
+  gameState.homeScore = 0;
+  gameState.guestScore = 0;
+  gameState.homeFouls = 0;
+  gameState.guestFouls = 0;
+  gameState.period = 1;
+  gameState.timerMinutes = 12;
+  gameState.timerSeconds = 0;
+  gameState.timerRunning = false;
+  clearInterval(gameState.timerInterval);
+  gameState.timerInterval = null;
+
+  initializeGameStateDisplay();
+  highlightLeadingTeam();
+}
+
+resetGame.addEventListener("click", () => {
+  resettingGame();
+});
