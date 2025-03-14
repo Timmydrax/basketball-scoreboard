@@ -76,6 +76,7 @@ h6 {
   --beige: #f1faee;
   --steel-blue: #457b9d;
   --navy-blue: #1d3557;
+  --hover-navy-blue: #0c213e;
   --white: #fff;
   --spacing-4px: 0.25rem;
   --spacing-8px: 0.5rem;
@@ -174,6 +175,11 @@ h6 {
     padding-inline: 1rem;
     padding-block: 0.5rem;
     border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: var(--hover-navy-blue);
+    }
   }
 }
 
@@ -232,6 +238,11 @@ h6 {
     color: var(--white);
     background-color: var(--navy-blue);
     border-radius: 4px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: var(--hover-navy-blue);
+    }
   }
 }
 
@@ -322,6 +333,11 @@ h6 {
     color: var(--white);
     background-color: var(--navy-blue);
     border-radius: var(--spacing-4px);
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: var(--hover-navy-blue);
+    }
   }
 }
 
