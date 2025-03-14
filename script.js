@@ -216,3 +216,60 @@ function guestFoulsDecrease(points) {
 guestFoulsDecrement.addEventListener("click", () => {
   guestFoulsDecrease(1);
 });
+
+// Timer Function
+//Start
+function startingTimer() {
+  if (!gameState.timerRunning) {
+    gameState.timerRunning = true;
+    gameState.timerInterval = setInterval(updateTimer, 1000);
+  }
+}
+
+startTimer.addEventListener("click", () => {
+  startingTimer();
+});
+
+//Stop
+function stoppingTimer() {
+  if (gameState.timerRunning) {
+    gameState.timerRunning = false;
+    clearInterval(gameState.timerInterval);
+    gameState.timerInterval = null;
+  }
+}
+
+stopTimer.addEventListener("click", () => {
+  stoppingTimer();
+});
+
+//Reset
+function resettingTimer() {
+  gameState.timerMinutes = 12;
+  gameState.timerSeconds = 0;
+  gameState.timerRunning = false;
+  clearInterval(gameState.timerInterval);
+  gameState.timerInterval = null;
+  updateTimerElement();
+}
+
+resetTimer.addEventListener("click", () => {
+  resettingTimer();
+});
+
+// Update Timer
+function updateTimer() {
+  if (gameState.timerMinutes === 0 && gameState.timerSeconds === 0) {
+    stoppingTimer();
+    return;
+  }
+
+  if (gameState.timerSeconds > 0) {
+    gameState.timerSeconds--;
+  } else {
+    gameState.timerMinutes--;
+    gameState.timerSeconds = 59;
+  }
+
+  updateTimerElement();
+}

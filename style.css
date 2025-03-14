@@ -137,19 +137,28 @@ h6 {
   margin-block-end: 1.25rem;
 }
 
+.timer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--beige);
+  border-radius: 0.25rem;
+  width: 118px;
+  height: 52px;
   -webkit-margin-after: 1rem;
   margin-block-end: 1rem;
 }
 
 .timer-heading {
-  display: inline;
   font-size: 2rem;
-  padding-inline: 0.75rem;
-  padding-block: 0.25rem;
   color: var(--steel-blue);
-  background-color: var(--beige);
-  border-radius: 0.25rem;
 }
 
 .timer-btn {
@@ -328,13 +337,20 @@ h6 {
   color: var(--white);
 }
 
+.foul-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: var(--spacing-4px);
+  background-color: var(--beige);
+}
+
 .fouls-score {
   font-size: var(--spacing-32px);
   color: var(--steel-blue);
-  padding-inline: var(--spacing-16px);
-  padding-block: var(--spacing-8px);
-  border-radius: var(--spacing-4px);
-  background-color: var(--beige);
 }
 
 .fouls-controls {
