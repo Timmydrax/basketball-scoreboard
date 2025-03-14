@@ -73,6 +73,7 @@ h6 {
 /* My Styled CSS */
 :root {
   --bright-red: #e63946;
+  --hover-bright-red: #e41726;
   --beige: #f1faee;
   --steel-blue: #457b9d;
   --navy-blue: #1d3557;
@@ -382,6 +383,11 @@ h6 {
     color: var(--white);
     border-radius: var(--spacing-4px);
     border: none;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: var(--hover-navy-blue);
+    }
   }
 }
 
@@ -399,5 +405,10 @@ h6 {
     border: none;
     padding-inline: var(--spacing-16px);
     padding-block: var(--spacing-4px);
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: var(--hover-bright-red);
+    }
   }
 }
